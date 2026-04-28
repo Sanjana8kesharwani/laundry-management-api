@@ -70,7 +70,7 @@ Provides summary insights:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/laundry-management-api.git
+git clone https://github.com/Sanjana8kesharwani/laundry-management-api.git
 cd laundry-management-api
 ```
 
@@ -100,20 +100,7 @@ http://localhost:5001
 
 **POST** `/orders/create`
 
-Request Body:
 
-```json
-{
-  "customerName": "Riya",
-  "phone": "9876543210",
-  "items": [
-    { "type": "shirt", "quantity": 2 },
-    { "type": "pant", "quantity": 1 }
-  ]
-}
-```
-
----
 
 ###  Update Order Status
 
@@ -145,23 +132,6 @@ With filters:
 ### Dashboard
 
 **GET** `/orders/dashboard`
-
----
-
-##  Sample Response
-
-```json
-{
-  "message": "Order created",
-  "orderId": "3702e767-3174-4723-982a-8412607ee98e",
-  "totalAmount": 35,
-  "data": {
-    "customerName": "Riya",
-    "phone": "9876543210",
-    "status": "RECEIVED"
-  }
-}
-```
 
 ---
 
